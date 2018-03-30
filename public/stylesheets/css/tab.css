@@ -1,0 +1,101 @@
+.font_style{
+    
+}
+
+.line{
+    border-right: 2px solid #565962;
+  }
+.title{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.col_padding{
+    padding:50px;
+}
+/* Style the tab */
+.tab {
+    float: left;
+    border-right: 1px solid #ccc;
+    background-color: transparent;
+    width: 10%;
+    height: 250px;
+    padding: 30px 0px;
+    
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    /* display: block; */
+    background-color: inherit;
+    color: #000;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.02rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: transparent;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: transparent;
+    color: #ee642d;
+    font-weight: 800;
+    border-right: 2px solid;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 30px 12px;
+    /* border: 1px solid #ccc; */
+    width: 90%;
+    border-left: none;
+    height: 250px;
+}
+
+
+@media(max-width:767px){
+    
+    .tab button{
+        width: 32.3%;
+        
+    }
+    .font_style{
+        font-size:10px;
+    }
+    .line{
+        border-right: 0px solid #565962;
+      }
+    .col_padding{
+        padding:0px;
+    }
+    .tab {
+        width: 100%;
+        height: 60px;
+        padding: 10px 0px;
+        border-right:0px;
+        }
+    .tabcontent {
+        padding: 30px 12px;
+        width: 100%;
+        height: 209px;
+    }    
+    .tab button.active {
+        border-bottom: 2px solid red!important;
+        border-right:none;
+    }
+    .tabcontent {
+        /* border: 1px solid #ccc; */
+        width: 100%;
+        border-left: none;
+        height: 310px;
+    }
+}

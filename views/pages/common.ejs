@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Entertainium</title>
+    <meta name="description" content="Latest updates and statistic charts">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--begin::Web font -->
+    <script src="/javascripts/js/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: { "families": ["Montserrat:300,400,500,600,700", "Roboto:300,400,500,600,700"] },
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+    });
+    </script>
+    <!--end::Web font -->
+    <!--begin::Base Styles -->
+    <!--begin::Page Vendors -->
+    <!--end::Page Vendors -->
+    <link href="/stylesheets/css/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/css/checkbox.css" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/css/toastr.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+    <link rel="shortcut icon" href="/images/images/bitcoin_PNG31.png"/>
+   
+</head>
+  <body class="login" style="color:#fff; font-family:Alegreya;">
+    <div>
+      <div class="login_wrapper">
+      <div class="animate form login_form">
+          <div class="logoCommona" style="margin-top:15%">
+            <CENTER>
+              <img src="/images/images/bitcoin_PNG31.png" height="100" width="100">
+            </CENTER>
+          </div>
+        <section class="login_content">
+          <form class="text-center"><br>
+            <h2 style="color:#000; font-family:Alegreya;"><%= title %></h2>
+            <h4 style="color:#000; font-family:Alegreya;" ><%= heading %></h4>
+            <h5 style="color:#000; font-family:Alegreya;"><%= message %></h5>
+        <div class="clearfix"></div>
+        <div class="separator"><br>
+              <a href="<%= linkHref %>" class='btn btn-primary2 m-btn m-btn--pill m-btn--custom'><%= linkText %></a><br>
+        <br />
+          </div>
+        </form>
+        </section>
+      </div>
+    </div>
+  <!--begin::Base Scripts -->
+  <script src="/javascripts/js/vendors.bundle.js " type="text/javascript "></script>
+  <script src="/javascripts/js/scripts.bundle.js " type="text/javascript "></script>
+  <!--end::Base Scripts -->
+  
+  </body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta charset="utf-8" />
+        
+        <title>Metronic | Dashboard</title>
+        <meta name="description" content="Latest updates and statistic charts"> 
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700%7CRoboto:300,400,500,600,700" media="all">
+				<link href="stylesheets/css/vendors.bundle.css" rel="stylesheet" type="text/css" />
+				<link href="stylesheets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+				<link href="stylesheets/css/checkbox.css" rel="stylesheet" type="text/css" />
+				<link href="stylesheets/loader.css" rel="stylesheet" type="text/css" />
+
+        <link rel="shortcut icon" href="images/images/bitcoin_PNG31.png" /> 
+   
+</head>
+    <!-- end::Head -->
+
+    
+    <!-- end::Body -->
+    <body onload="getBtcUsd();getEthUsd();tokensold()"class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
+
+<div class="m-grid m-grid--hor m-grid--root m-page">
+    
+<header class="m-grid__item    m-header "  data-minimize-offset="200" data-minimize-mobile-offset="200" >
+	<div class="m-container m-container--fluid m-container--full-height">
+		<div class="m-stack m-stack--ver m-stack--desktop">		
+			<!-- BEGIN: Brand -->
+<div class="m-stack__item m-brand  m-brand--skin-dark ">
+	<div class="m-stack m-stack--ver m-stack--general">
+		<div class="m-stack__item m-stack__item--middle m-stack__item--center m-brand__logo">
+			<a href="index7f70.html?page=index&amp;demo=demo3" class="m-brand__logo-wrapper">
+			<img alt="" src="images/images/bitcoin_PNG31.png" style="width:75px;"/>
+			</a>  
+		</div>
+		<div class="m-stack__item m-stack__item--middle m-brand__tools">
+							<!-- BEGIN: Responsive Aside Left Menu Toggler -->
+				<a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block">
+					<span></span>
+				</a>
+		</div>
+	</div>
+</div>
+<!-- END: Brand -->			
+			<div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav">
+
+								<!-- BEGIN: Horizontal Menu -->
+<button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- END: Header -->		
+		<!-- begin::Body -->
+		
+				<div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+											<!-- BEGIN: Left Aside -->
+<button class="m-aside-left-close m-aside-left-close--skin-dark" id="m_aside_left_close_btn"><i class="la la-close"></i></button>
+
+<div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark ">	
+	<!-- BEGIN: Aside Menu -->
+	<div 
+		id="m_ver_menu" 
+		class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark m-aside-menu--dropdown " 
+		data-menu-vertical="true"
+		 data-menu-dropdown="true" data-menu-dropdown-timeout="500"  
+	>	
+		<ul class="m-menu__nav  m-menu__nav--dropdown-submenu-arrow ">
+			<li class="m-menu__item  m-menu__item--active" aria-haspopup="true" ><a  href="/dashboard" class="m-menu__link "><i class="m-menu__link-icon flaticon-line-graph"></i><span class="m-menu__link-text">Dashboard</span></a>
+			</li>
+			<li class="m-menu__item" aria-haspopup="true" ><a  href="/order_history" class="m-menu__link "><i class="m-menu__link-icon flaticon-cart"></i><span class="m-menu__link-text">Order History</span></a>
+			</li>
+			<li class="m-menu__item" aria-haspopup="true" ><a  href="/referral" class="m-menu__link "><i class="m-menu__link-icon flaticon-piggy-bank"></i><span class="m-menu__link-text">Refferal Bonus</span></a></li>
+			<li class="m-menu__item" aria-haspopup="true" ><a  href="/settings" class="m-menu__link "><i class="m-menu__link-icon flaticon-settings"></i><span class="m-menu__link-text">Settings</span></a></li>
+			<li class="m-menu__item" aria-haspopup="true" ><a  href="/faq" class="m-menu__link "><i class="m-menu__link-icon flaticon-speech-bubble"></i><span class="m-menu__link-text">Faq</span></a></li>
+			<li class="m-menu__item" aria-haspopup="true" ><a  href="/" class="m-menu__link " onclick="return logout()"><i class="m-menu__link-icon flaticon-logout"></i><span class="m-menu__link-text">Log Out</span></a></li>
+			
+		</ul>
+	</div>
+<<<<<<< HEAD
+	<!-- END: Aside Menu -->
+</div>
+<!-- END: Left Aside -->							
+=======
+
+</div>
+							
+>>>>>>> 8e4b09893aeda426700a5bbb31cf6ea4b1688d0e
+		   	<div class="m-grid__item m-grid__item--fluid m-wrapper">
+       <div class="m-content">
+		            <!--Begin::Section-->
+<div class="row">
+	<div class="col-md-12">
+		<!--begin:: Widgets/Quick Stats-->
+<div class="row">
+	<div class="col-md-12">
+		<div class="m-portlet ">
+				<div class="m-portlet__head ">
+                        <div class="m-portlet__head-caption ">
+                            <div class="m-portlet__head-title ">
+                                <span class="m-portlet__head-icon ">
+                                    <i class="flaticon-coins "></i>
+                                </span>
+                                <h3 class="m-portlet__head-text ">
+                                    Purchase RES
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+			
+				<div class="row">
+						<div class="col-md-12">
+							<div class="tab">
+								<button class="tablinks active" onclick="openCity(event, 'London')" id="defaultOpen">BTC</button>
+								<button class="tablinks " onclick="openCity(event, 'Paris')">ETH</button>
+								<!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">CARD</button> -->
+							</div>
+							<div id="London" class="tabcontent" style="display: block;">
+								<div class="row">
+								
+									<div class="col-md-12 col-12 text-center">
+										<br>
+										<div>
+											<p>Bitcoin (BTC)</p>
+										</div>
+									</div>
+									<div class="col-md-12 col-12 text-center">
+										<br>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-1"></div>
+									<div class="col-12 col-sm-5 col-md-4">
+											<div>
+													<div class="input-group">
+															<input type="number" class="form-control" placeholder="Number of" id="amountinbtccurrency">
+															<span class="input-group-btn">
+																<button class="btn btn-primary" type="button">BTC</button>
+															</span>
+														</div>
+											</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-12 col-sm-2 col-md-2" style="text-align:center;vertical-align:middle ;margin: 10px 0px;">
+										<i class="fa fa-arrow-left"></i>
+										<i class="fa fa-arrow-right"></i>
+									</div>
+									<div class="col-12 col-sm-5 col-md-4">
+											<div class="input-group">
+													<input type="number" class="form-control" placeholder="Number of" id="tokenamountinbtc">
+													<span class="input-group-btn">
+														<button class="btn btn-primary" type="button">RES</button>
+													</span>
+												</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-lg-12 m--align-center">
+										<br>
+										<button class="btn btn-primary m-btn m-btn--custom m-btn--icon" data-wizard-action="submit" onclick="btcpurchasefunction()" id="btcpurchasebutton">PURCHASE
+										</button>
+										<span id="btchiddenbutton"></span>
+									</div>
+								</div>
+							</div>
+							<div id="Paris" class="tabcontent" style="display: none;">
+								<div class="row">
+							
+									<div class="col-md-12 col-12 text-center">
+										<br>
+										<div>
+											<p>ETHEREUM (ETH)</p>
+										</div>
+									</div>
+									<div class="col-md-12 col-12 text-center">
+										<br>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-1"></div>
+									<div class="col-12 col-sm-5 col-md-4">
+										<div class="input-group">
+											<input type="number" class="form-control" placeholder="Number of" id="amountinethcurrency">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="button">ETH</button>
+											</span>
+										</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-12 col-sm-2 col-md-2" style="text-align:center;vertical-align:middle ;margin: 10px 0px;">
+										<i class="fa fa-arrow-left"></i>
+										<i class="fa fa-arrow-right"></i>
+									</div>
+									<div class="col-12 col-sm-5 col-md-4">
+										<div class="input-group">
+											<input type="number" class="form-control" placeholder="Number of" id="tokenamountineth">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="button">ENM</button>
+											</span>
+										</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-lg-12 m--align-center">
+										<br>
+										
+										<button class="btn btn-primary m-btn m-btn--custom m-btn--icon" data-wizard-action="submit" onclick="ethpurchasefunction()" id="ethpurchasebutton">PURCHASE
+										</button>
+										<div id="ethhiddenbutton"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+							<!-- <div id="Tokyo" class="tabcontent" style="display: none;">
+								<div class="row">
+								
+									<div class="col-md-12 col-12 text-center">
+										<br>
+										<div>
+											<p>Debit/Credit Card</p>
+										</div>
+									</div>
+									<div class="col-md-12 col-12 text-center">
+										<br>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-1"></div>
+									<div class="col-12 col-sm-5 col-md-4">
+										<div class="input-group">
+											<input type="number" class="form-control" placeholder="Number of">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="button">USD</button>
+											</span>
+										</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-12 col-sm-2 col-md-2" style="text-align:center;vertical-align:middle ;margin: 10px 0px;">
+										<i class="fa fa-arrow-left"></i>
+										<i class="fa fa-arrow-right"></i>
+									</div>
+									<div class="col-12 col-sm-5 col-md-4">
+										<div class="input-group">
+											<input type="number" class="form-control" placeholder="Number of">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="button">ENM</button>
+											</span>
+										</div>
+										<span class="text-danger"></span>
+									</div>
+									<div class="col-lg-12 m--align-center">
+										<br>
+										<button class="btn btn-primary m-btn m-btn--custom m-btn--icon" data-wizard-action="submit" onclick="usdpurchasefunction()" id="usdpurchasebutton">PURCHASE</button>
+
+									</div>
+								</div>
+
+							</div> -->
+					
+					
+						
+		
+		</div>
+		<div class="m--space-30"></div>
+		<div class="m-portlet m-portlet--responsive-mobile">
+			<div class="m-portlet__head">
+				<div class="m-portlet__head-caption">
+					<div class="m-portlet__head-title">
+						<span class="m-portlet__head-icon">
+							<i class="flaticon-music-2"></i>
+						</span>
+						<h3 class="m-portlet__head-text">
+							Pre ICO
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="m-portlet__body" style="padding-bottom: 1px;">
+				<!--begin::Section-->
+				<div class="m-section ">
+					<div class="m-section__content ">
+						<div class="row ">
+							<div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count text-center" style="border-right: 2px solid;">
+								<span class="count_top ">
+									<h5>YOUR ENM BALANCE</h5>
+								</span>
+								<div class="count " style="font-size:125%;">
+                                        <%= enm %>
+                                    </div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count text-center " style="border-right: 2px solid;">
+								<span class="count_top ">
+									<h5>RES PRICE</h5>
+								</span>
+								<div class="count " style="font-size:125%;">
+                                        <span>$
+                                            <span id="valueoftoken">
+                                                <%= tokenValue %>
+                                            </span>
+                                        </span>
+                                    </div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-6 tile_stats_count text-center ">
+								<span class="count_top ">
+								<h5>Total USD Value</h5>
+								</span>
+								<div class="count " style="font-size:125%;">
+                                        <span>
+                                            <%= totalusduser %>
+                                        </span>
+                                    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end::Section-->
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="m-portlet">
+			<div class="m-portlet ">
+				<!--begin::Total Profit-->
+					<div class="m-widget24" style="padding-bottom: 10px;">
+							<div class="m-widget24__item">
+									<h4 class="m-widget24__title">
+										RES SOLD
+									</h4>
+									<br>
+									<span class="m-widget24__desc">
+										Total Sold
+									</span>
+									<span class="m-widget24__stats m--font-danger" id="totaltokensold">
+
+									</span>
+									<div class="m--space-10"></div>
+									<div class="progress m-progress--sm">
+										<div class="progress-bar m--bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+					</div>
+				</div>
+		</div>
+		
+		
+	</div>
+	<div class="col-md-4">
+		<div class="m-portlet">
+			<div class="m-portlet ">
+				<!--begin::Total Profit-->
+				<div class="m-widget24" style="padding-bottom: 10px;">
+						<div class="m-widget24__item">
+								<h4 class="m-widget24__title">
+									ICO USERS
+								</h4>
+								<br>
+								<span class="m-widget24__desc">
+									Joined New User
+								</span>
+								<span class="m-widget24__stats m--font-success" id="totalusers">
+								</span>
+								<div class="m--space-10"></div>
+								<div class="progress m-progress--sm">
+									<div class="progress-bar m--bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<!-- <span class="m-widget24__change">
+
+								</span>
+								<span class="m-widget24__number">
+
+								</span> -->
+							</div>
+				</div>
+				</div>
+		</div>
+		
+		
+	</div>
+	<div class="col-md-4">
+		<div class="m-portlet">
+			<div class="m-portlet ">
+				<!--begin::Total Profit-->
+				<div class="m-widget24" style="padding-bottom: 10px;">
+						<div class="m-widget24__item">
+								<h4 class="m-widget24__title">
+									USD RAISED
+								</h4>
+								<br>
+								<span class="m-widget24__desc">
+									Customer Review
+								</span>
+								<span class="m-widget24__stats m--font-info" id="usdraised"></span>
+								<div class="m--space-10"></div>
+								<div class="progress m-progress--sm">
+									<div class="progress-bar m--bg-info" role="progressbar" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+				</div>
+				</div>
+		</div>
+		
+		
+	</div>
+	<div class="modal fade" id="payConfModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+
+					<h4 class="modal-title text-center posSiNea">Payment Confirmation Details</h4>
+					<button type="button" onclick="notable()" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<center style="margin-top: -6px;">
+						<img id="imageQrCode" class="text-center" style="width:160px; height:160px;">
+					</center>
+					<div class="row">
+						<div class="col-md-12">
+							<b>
+								<span class="to_am_t_send">Total Amount To Send:</span>
+								<span id="amount-to-be-paid" class="text-danger"></span>
+								(
+								<span class="to_con_nee">Total Confirms Needed: </span>
+								<span class="text-danger" id="confirm"></span>)
+							</b>
+							<!-- <div class="col-md-8 pull-left">
+								<span id="amount-to-be-paid" class="text-danger"></span>
+								(
+								<span class="to_con_nee">Total Confirms Needed: </span>
+								<span class="text-danger" id="confirm"></span>)</div> -->
+						</div>
+						<div class="col-md-12">
+							<b>
+								<span class="sen_t_add">Send To Address:</span>
+								<span id="payment-address" class="text-danger"></span>
+							</b>
+						</div>
+						<div class="col-md-12">
+							<b>
+								<span class="tran_id">Transaction ID:</span>
+								<span id="transaction-id" class="text-danger"></span>
+							</b>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+<!-- end:: Page -->
+      
+    	    	<script src="javascripts/js/vendors.bundle.js" type="text/javascript"></script>
+				<script src="javascripts/js/scripts.bundle.js" type="text/javascript"></script>
+				<script src="/javascripts/custom/logout.js " type="text/javascript "></script>
+				<script src="/javascripts/custom/btceth.js " type="text/javascript "></script>
+				<script src="/javascripts/custom/dashboard.js " type="text/javascript "></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+				<!--end::Base Scripts -->   
+
+         
+       
+
+        
+        
+                    
+        <!--begin::Page Snippets --> 
+                <script src="javascripts/js/dashboard.js" type="text/javascript"></script>
+                <!--end::Page Snippets -->   
+				<script>
+						function openCity(evt, cityName) {
+							var i, tabcontent, tablinks;
+							tabcontent = document.getElementsByClassName("tabcontent");
+							for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							}
+							tablinks = document.getElementsByClassName("tablinks");
+							for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							}
+							document.getElementById(cityName).style.display = "block";
+							evt.currentTarget.className += " active";
+						}
+				
+						// Get the element with id="defaultOpen" and click on it
+						document.getElementById("defaultOpen").click();
+					</script>
+            </body>
+    <!-- end::Body -->
+
+<!-- Mirrored from keenthemes.com/metronic/preview/?demo=demo3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Feb 2018 12:42:25 GMT -->
+</html>
