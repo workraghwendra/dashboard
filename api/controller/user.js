@@ -483,7 +483,7 @@ var self = module.exports = {
                     var mainOptions = {
                         from: `raghwendrapratap0194@gmail.com`,
                         to: req.body.email,
-                        subject: 'Forget Password | ENTERTAINIUM',
+                        subject: 'Forget Password | OFNOF',
                         html: data
                     };
 
@@ -800,7 +800,7 @@ var self = module.exports = {
 							var mainOptions = {
 								from: `raghwendrapratap0194@gmail.com`,
 								to:body.changedemail,
-								subject:'Account Activation | EntertainiumWallet',
+								subject:'Account Activation | RESOCOIN',
 								html: data
 							};
 
@@ -942,7 +942,7 @@ var randomstringmerchant= randomstring.generate(32)
                                             'amount': req.body.currencyamount,
                                             'buyer_email': req.body.email,
                                             'custom': req.body._id,
-                                            'item_name': "Entertainium",
+                                            'item_name': "RESOCOIN",
                                             'item_number': tokenQuantity
                                             
                                         }, function(err, result) {
@@ -995,7 +995,7 @@ var randomstringmerchant= randomstring.generate(32)
                                             'amount': req.body.currencyamount,
                                             'buyer_email': currentUser.email,
                                             'custom': currentUser._id,
-                                            'item_name': "Entertainium",
+                                            'item_name': "RESOCOIN",
                                             'item_number': tokenQuantity
                                         }, function(err, result) {
                                             console.log(result)

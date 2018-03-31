@@ -18,8 +18,8 @@
     border-right: 1px solid #ccc;
     background-color: transparent;
     width: 10%;
-    height: 250px;
-    padding: 30px 0px;
+    height: 218px;
+    padding: 0px 0px;
     
 }
 
@@ -28,7 +28,7 @@
     /* display: block; */
     background-color: inherit;
     color: #000;
-    padding: 22px 16px;
+    padding: 45px 16px;
     width: 100%;
     border: none;
     outline: none;
@@ -46,7 +46,7 @@
 /* Create an active/current "tab button" class */
 .tab button.active {
     background-color: transparent;
-    color: #ee642d;
+    color: #189dd9;
     font-weight: 800;
     border-right: 2px solid;
 }
@@ -58,7 +58,7 @@
     /* border: 1px solid #ccc; */
     width: 90%;
     border-left: none;
-    height: 250px;
+    height: 218px;
 }
 
 
@@ -89,7 +89,7 @@
         height: 209px;
     }    
     .tab button.active {
-        border-bottom: 2px solid red!important;
+        border-bottom: 2px solid #189dd9!important;
         border-right:none;
     }
     .tabcontent {
