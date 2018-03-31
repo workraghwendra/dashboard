@@ -1,7 +1,7 @@
 var express = require('express');
 const jwt = require('jsonwebtoken');
 var router = express.Router();
-var UserController = require("../api/controller/user");
+var UserController = require('../api/controller/user');
 var coinDetail 	= require('../api/modal/coindetail');;
 var User = require('../api/modal/user')
 // var coinDetail 	= require('../api/modal/coindetail');
