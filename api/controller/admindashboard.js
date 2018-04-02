@@ -275,7 +275,7 @@ Fetchadmintoken = ((req, res) => {
         var m = [];
         for (n = 0; n < length; n++) {
 
-            m.push(response[n].enm)
+            m.push(response[n].res)
 
         }
        
@@ -627,7 +627,7 @@ Fetcht = ((req, res) => {
                 "time_created": {
                     "$add": [new Date(0), "$time_created"]
                 },
-                "enm": 1,
+                "res": 1,
                 "msisdn": 1
             }
         },
@@ -646,7 +646,7 @@ Fetcht = ((req, res) => {
                 },
 
                 total: {
-                    $sum: "$enm"
+                    $sum: "$res"
                 }
             }
 

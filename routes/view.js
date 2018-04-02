@@ -186,15 +186,15 @@ var verifyToken = function(req,res,next){
   });
 
 router.get('/dashboard',verifyToken,  function(req, res, next) {
-  res.render('dashboard', {userID:req.user_data.email,enm:req.user_data.totalToken,ref:req.user_data.refGenId,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name});
+  res.render('dashboard', {userID:req.user_data.email,res:req.user_data.totalToken,ref:req.user_data.refGenId,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name});
 });
 
 router.get('/order_history',verifyToken, function(req, res, next) {
-  res.render('order_history', {userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:(req.user_data.purchasedcoins).toFixed(3),userrefcoins:req.user_data.referredcoins});
+  res.render('order_history', {userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:(req.user_data.purchasedcoins).toFixed(3),userrefcoins:req.user_data.referredcoins});
 });
 
 router.get('/referral',verifyToken, function(req, res, next) {
-  res.render('referral', {userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,ref:req.user_data.refGenId,userpurcoins:(req.user_data.purchasedcoins).toFixed(3),userrefcoins:req.user_data.referredcoins});
+  res.render('referral', {userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,ref:req.user_data.refGenId,userpurcoins:(req.user_data.purchasedcoins).toFixed(3),userrefcoins:req.user_data.referredcoins});
 });
 
 router.get('/settings', verifyToken, function(req, res, next) {
@@ -208,7 +208,7 @@ router.get('/faq',verifyToken, function(req, res, next) {
 });
 router.get('/adminpage',verifyAdmin, function(req, res, next){
 	User.find({'status.type':2}).then((fetchAll) => {
-	res.render('adminpage',{userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins,list:fetchAll});
+	res.render('adminpage',{userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins,list:fetchAll});
 	});
 });
 
@@ -217,21 +217,21 @@ router.get('/userdetail',verifyAdmin, function(req, res, next){
 
 });
 router.get('/distribute',verifyAdmin, function(req, res, next){
-	res.render('distribute',{userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
+	res.render('distribute',{userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
 });
 router.get('/userstats',verifyAdmin, function(req, res, next){
-	res.render('userstats',{userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
+	res.render('userstats',{userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
 })
 
 router.get('/tokenstats',verifyAdmin, function(req, res, next){
-	res.render('tokenstats',{userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
+	res.render('tokenstats',{userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
 });
 
 router.get('/orderstats',verifyAdmin, function(req, res, next){
-	res.render('orderstats',{userID:req.user_data.email,enm:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
+	res.render('orderstats',{userID:req.user_data.email,res:req.user_data.totalToken,tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
 });
 
 router.get('/admindashboard',verifyAdmin, function(req, res, next) {
-  res.render('admindashboard',{userID:req.user_data.email,enm:(req.user_data.totalToken),tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
+  res.render('admindashboard',{userID:req.user_data.email,res:(req.user_data.totalToken),tokenValue:config.tokenUSDEx,totalusduser:(req.user_data.totalToken*config.tokenUSDEx),userName:req.user_data.name,userpurcoins:req.user_data.purchasedcoins,userrefcoins:req.user_data.referredcoins});
 });
 module.exports = router;

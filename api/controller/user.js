@@ -881,9 +881,9 @@ var self = module.exports = {
         				isFloat: true,
         				isLength: {
         				options: [{ min: 1,max: 22 }],
-        					errorMessage: 'ENM price not valid please re-enter'
+        					errorMessage: 'res price not valid please re-enter'
         				},
-        				errorMessage: 'Invalid ENM price !, ENM price could not be left empty and should be a numeric value'
+        				errorMessage: 'Invalid res price !, res price could not be left empty and should be a numeric value'
         			}
         		});
 
@@ -926,7 +926,7 @@ var randomstringmerchant= randomstring.generate(32)
                             mess2: '2 transactions are already pending'
                         });
                     } else {
-                        // converting btc/eth currency to ENMs at backend
+                        // converting btc/eth currency to ress at backend
                         if (req.body.currency == 'BTC') {
                             var btcUSDEx = '';
                             axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD')
@@ -1034,7 +1034,7 @@ var randomstringmerchant= randomstring.generate(32)
 
                     }
 
-                    // converting btc/eth ends currency to ENMs at backend
+                    // converting btc/eth ends currency to ress at backend
 
                 } else {
                     res.send({
@@ -1062,7 +1062,7 @@ var randomstringmerchant= randomstring.generate(32)
                 user.orders.forEach(function(element) {
                     // console.log("hello");
                     // console.log(element)	
-                    array1.push([element.order_id, element.time_created, element.amountf, element.receivedf, element.payment_address, element.enm, element.type, element.time_expires, element.status, element.Merchant_orderId,element.txn_id])
+                    array1.push([element.order_id, element.time_created, element.amountf, element.receivedf, element.payment_address, element.res, element.type, element.time_expires, element.status, element.Merchant_orderId,element.txn_id])
                 })
                 var reversed = array1.reverse();
                 // console.log('dddd', reversed)
@@ -1160,8 +1160,8 @@ var randomstringmerchant= randomstring.generate(32)
                                     console.log('CA',CA)
                                     var tokenQuantity = ((CA * order.exValue) / config.tokenUSDEx).toFixed(8);
                                     order.usd = tokenQuantity*config.tokenUSDEx
-                                    ADDAMOUNT = order.enm;
-                                    console.log('@@@@@@@@@@',ADDAMOUNT,order.enm)
+                                    ADDAMOUNT = order.res;
+                                    console.log('@@@@@@@@@@',ADDAMOUNT,order.res)
                                     ADDAMOUNTWO = order.amountf;
                                     order.status = mystatus;
                                     ORDEROBJID = order;

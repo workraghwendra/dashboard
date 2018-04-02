@@ -77,7 +77,7 @@ Distribute = ((req, res) => {
                                 type: String
                             },
                             customer_email:customer,
-                            enm:value,
+                            res:value,
                             
                             amountf:value*0.5,
                             payment_address: "By admin",

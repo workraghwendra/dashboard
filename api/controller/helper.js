@@ -5,12 +5,12 @@ var cpay            = require('coinpayments');
 var shortid			= require('shortid');
 var client          = new cpay({'key':process.env.COINPAYMENTAPIKEY,'secret':process.env.COINPAYMENTAPISECRET,'autoIpn':false});
 
-exports.InsertOrderHistory = function (txn_id,user,qrImage, curType,randomstringmerchant,enm,exvalue) {
+exports.InsertOrderHistory = function (txn_id,user,qrImage, curType,randomstringmerchant,res,exvalue) {
 	// console.log("txn_id",txn_id);
 	// console.log("user",user);
 	// console.log("qrimage", qrImage);
 	// console.log("curtype",curType);
-	console.log("enm",exvalue);
+	console.log("res",exvalue);
 	// console.log(randomstringmerchant)
    client.getTx(txn_id, function(err,result){
     //   console.log("RREiiiiiiiiiit",result);
@@ -29,7 +29,7 @@ exports.InsertOrderHistory = function (txn_id,user,qrImage, curType,randomstring
 				txn_id              :   txn_id,
 				payment_address     :   result.payment_address,
 				qrcode_url          :   qrImage,
-				enm	            :   enm,
+				res	            :   res,
 				order_id			:   shortid.generate(),
 				user 				:   user
 			})

@@ -404,7 +404,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.fixVerticalPosition = exports.resetInputError = exports.resetInput = exports.openModal = exports.getInput = exports.getOverlay = exports.getModal = exports.sweetAlertInitialize = undefined;
+  exports.fixVerticalPosition = exports.resetInputError = exports.resetInput = exports.opresodal = exports.getInput = exports.getOverlay = exports.getModal = exports.sweetAlertInitialize = undefined;
   
   var _handleDom = require('./handle-dom');
   
@@ -470,7 +470,7 @@
   /*
    * Animation when opening modal
    */
-  var openModal = function openModal(callback) {
+  var opresodal = function opresodal(callback) {
     var $modal = getModal();
     (0, _handleDom.fadeIn)(getOverlay(), 10);
     (0, _handleDom.show)($modal);
@@ -543,7 +543,7 @@
   exports.getModal = getModal;
   exports.getOverlay = getOverlay;
   exports.getInput = getInput;
-  exports.openModal = openModal;
+  exports.opresodal = opresodal;
   exports.resetInput = resetInput;
   exports.resetInputError = resetInputError;
   exports.fixVerticalPosition = fixVerticalPosition;
@@ -997,7 +997,7 @@
   
     (0, _setParams2.default)(params);
     (0, _handleSwalDom.fixVerticalPosition)();
-    (0, _handleSwalDom.openModal)(arguments[1]);
+    (0, _handleSwalDom.opresodal)(arguments[1]);
   
     // Modal interactions
     var modal = (0, _handleSwalDom.getModal)();

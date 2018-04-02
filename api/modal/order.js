@@ -16,7 +16,7 @@ const orderSchema = new mongoose.Schema({
 	txn_id			:	{type:String},
 	payment_address	:	{type:String},
 	qrcode_url		:	{type:String,default:null},
-	enm		:	{type:Number},
+	res		:	{type:Number},
 	usd:{type:Number,default:0},
 	order_id		:	{type:String},
 	user 			:	{ type: mongoose.Schema.ObjectId, ref: 'User' },

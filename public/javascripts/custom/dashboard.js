@@ -94,7 +94,7 @@ function btcpurchasefunction() {
     else if(amount < 1){
         swal({
             title: 'Insufficient Amount',
-            text: "ENM Amount must be greater than 1 ENM",
+            text: "res Amount must be greater than 1 res",
             type: 'warning',
           })
         return false;
@@ -185,7 +185,7 @@ function ethpurchasefunction() {
 
         swal({
             title: 'Insufficient Amount',
-            text: "ENM Amount must be greater than 1 ENM",
+            text: "res Amount must be greater than 1 res",
             type: 'warning',
           })
         return false;
