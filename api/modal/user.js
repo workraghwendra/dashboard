@@ -84,7 +84,7 @@ userSchema.methods.generateJwt = function () {
 			status  		: this.status.active,
 			referral		: this.referral,
 			created 		: this.created,
-			exp     		: parseInt((Date.now()+600000)/1000)
+			exp     		: parseInt((Date.now()+3600000)/1000)
 		}, process.env.JWT_SECRET);
 };
 

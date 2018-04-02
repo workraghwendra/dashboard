@@ -90,7 +90,7 @@ var self = module.exports = {
             }
             if (user) {
                 var now = new Date().getTime();
-				var expiryTime = parseInt(now + (60 *10* 1000));
+				var expiryTime = parseInt(now + (60 *60* 1000));
 
                 if(user.status.banned){
 					return res.json({status:false,ban:true,mess:'you are suspended contact to adminsupport'});					
