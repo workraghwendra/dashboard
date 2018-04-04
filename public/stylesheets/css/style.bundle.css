@@ -6501,8 +6501,8 @@ a.text-dark:focus, a.text-dark:hover {
   .btn-accent:focus, .btn-accent.focus {
     box-shadow: 0 0 0 0.2rem rgba(0, 197, 220, 0.5); }
   .btn-accent.disabled, .btn-accent:disabled {
-    background-color: #00c5dc;
-    border-color: #00c5dc; }
+    background-color: #8b8b83;
+    border-color: #8b8b83; }
   .btn-accent:not([disabled]):not(.disabled):active, .btn-accent:not([disabled]):not(.disabled).active,
   .show > .btn-accent.dropdown-toggle {
     color: #fff;
