@@ -11651,7 +11651,7 @@ b, strong {
   .m-tabs-line.m-tabs-line--primary.nav.nav-tabs .nav-link:hover, .m-tabs-line.m-tabs-line--primary.nav.nav-tabs .nav-link.active,
   .m-tabs-line.m-tabs-line--primary a.m-tabs__link:hover,
   .m-tabs-line.m-tabs-line--primary a.m-tabs__link.active {
-    color: #ffefd5;
+    color: #000000;
     border-bottom: 1px solid #ffefd5; }
     .m-tabs-line.m-tabs-line--primary.nav.nav-tabs .nav-link:hover > i, .m-tabs-line.m-tabs-line--primary.nav.nav-tabs .nav-link.active > i,
     .m-tabs-line.m-tabs-line--primary a.m-tabs__link:hover > i,
