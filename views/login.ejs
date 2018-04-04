@@ -84,7 +84,7 @@
 
 						<div class="m-login__logo" >
 							<a href="#">
-							<img src="images/images/bitcoin_PNG31.png" style="width:250px;">  	
+							<img src="images/images/bitcoin_PNG31.png" style="width:180px;">  	
 							</a>
 						</div>
 
@@ -96,11 +96,11 @@
 
 							<form class="m-login__form m-form" action="post" id ="userloginform">
 								<div class="form-group m-form__group">
-									<input class="form-control m-input" type="email" style="color:#189dd9" placeholder="Email" name="email" autocomplete="off" id="logemail" onkeyup='myfunction()'>
+									<input class="form-control m-input" type="email"  placeholder="Email" name="email" autocomplete="off" id="logemail" onkeyup='myfunction()'>
 									<div class="text-error-text float-right text-danger small" id="loginEmailError"></div>
 								</div>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input m-login__form-input--last" type="password" style="color:#189dd9" placeholder="Password" name="password" id="logpass" onkeyup='myfunction()' >
+									<input class="form-control m-input m-login__form-input--last" type="password"  placeholder="Password" name="password" id="logpass" onkeyup='myfunction()' >
 									<div class="text-error-text float-right text-danger small" id="loginPasswordError"></div>
 								</div>
 								<div class="form-group m-form__group">	
@@ -109,7 +109,7 @@
 												<a href="javascript:;" id="activatelink" class="m-link" data-toggle="modal" data-target="#m_modal_6">Resend Activation Link</a>
 											</div>
 									<div class="col m--align-right">
-										<a href="javascript:;" style="color:#189dd9" id="m_login_forget_password" class="m-link">Forget Password ?</a>
+										<a href="javascript:;"  id="m_login_forget_password" class="m-link">Forget Password ?</a>
 									</div>
 									</div>
 								</div>
@@ -122,28 +122,28 @@
 						<div class="m-login__signup">
 							<form class="m-login__form m-form" action="Post" id='userRegisterForm' name='userRegisterForm'>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input" type="text" placeholder="Full Name" name="fullname" id="Username" style="color:#189dd9" onkeyup='myfunction()'>
+									<input class="form-control m-input" type="text" placeholder="Full Name" name="fullname" id="Username"  onkeyup='myfunction()'>
 									<div class="text-error-text float-right text-danger small" id="NameError"></div>
 								</div>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input" type="text" placeholder="E-mail" name="email" autocomplete="off" id="Useremail" style="color:#189dd9" onkeyup='myfunction()'> 
+									<input class="form-control m-input" type="text" placeholder="E-mail" name="email" autocomplete="off" id="Useremail"  onkeyup='myfunction()'> 
 									<div class="text-error-text float-right text-danger small" id="EmailError"></div>
 								</div>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input" type="password" placeholder="Password (of atleast 8 characters)" name="password" id="Userpassword" style="color:#189dd9" onkeyup='myfunction()'>
+									<input class="form-control m-input" type="password" placeholder="Password (of atleast 8 characters)" name="password" id="Userpassword"  onkeyup='myfunction()'>
 									<div class="text-error-text float-right text-danger small" id="PassError"></div>
 								</div>
 								<div class="form-group m-form__group">
-									<input class="form-control m-input" type="password" placeholder="Confirm Password" name="cpassword" id="cUserpassword" style="color:#189dd9" onkeyup='myfunction()'>
+									<input class="form-control m-input" type="password" placeholder="Confirm Password" name="cpassword" id="cUserpassword"  onkeyup='myfunction()'>
 									<div class="text-error-text float-right text-danger small" id="RepassError"></div>
 								</div>
 								<div class="m-form__group form-group">
 									<input id="country" name="phoneCountry" name="country" type="hidden"/>
-									<input style="color:#189dd9" id="phone" name="phone" placeholder="<%= __('phonNuPassPlacHol') %>" type="number" class="form-control" value=""  onkeyup='myfunction()'>
+									<input id="phone" name="phone" placeholder="<%= __('phonNuPassPlacHol') %>" type="number" class="form-control" value=""  onkeyup='myfunction()'>
 									<div class="text-error-text float-right text-danger small" id="NumberError"></div>                                        
 								</div>
 								<div class="form-group m-form__group">
-                                        <input class="form-control m-input" type="text" style="color:#189dd9" placeholder="Referral Id (optional)" name="refid" id="ref" value="<%= ref %>">
+                                        <input class="form-control m-input" type="text"  placeholder="Referral Id (optional)" name="refid" id="ref" value="<%= ref %>">
                                         <div class="text-error-text float-right text-danger small" id="PhoneError"></div>
                                     </div>
 								<div class="row form-group m-form__group m-login__form-sub">
@@ -170,7 +170,7 @@
 							</div>
 							<form class="m-login__form m-form" action="#" id="forpassactivation">
 								<div class="form-group m-form__group">
-									<input  style="color:#189dd9" class="form-control m-input" type="text" placeholder="Email" name="email" id="forpassemail" autocomplete="off">
+									<input  class="form-control m-input" type="text" placeholder="Email" name="email" id="forpassemail" autocomplete="off">
 								</div>
 								<div class="m-login__form-action">
 									<button id="reqforpass" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">Request</button>
@@ -216,7 +216,7 @@
 									<div class="panel-body">
 										<fieldset>
 											<div class="form-group">
-												<input class="form-control input-lg" style="color:#189dd9" placeholder="Enter Recieved OTP" name="otp" type="text" id="otplogin">
+												<input class="form-control input-lg"  placeholder="Enter Recieved OTP" name="otp" type="text" id="otplogin">
 												<br/>
 												</div>
 											<button type="button" class="btn btn-primary  margin-btn m-t-n-xs" id="otpsignin" onclick="tfalogin()">OK</button>
@@ -253,7 +253,7 @@
 							  </button></div>
 					<h5>Resend Activation Link</h5><br/>
 					<div class="form-group m-form__group padd" >
-						<input class="form-control m-input" style="color:#189dd9" type="text" placeholder="Email" name="email" id="resendActEmail">
+						<input class="form-control m-input"  type="text" placeholder="Email" name="email" id="resendActEmail">
 					</div><br/>
 					<div class="m-login__form-action">
 						<button id="reqforReAct" onclick="resendemailactivation()" class="btn m-btn m-btn--pill m-btn--custom">Request</button>

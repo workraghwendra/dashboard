@@ -46,7 +46,7 @@
 /* Create an active/current "tab button" class */
 .tab button.active {
     background-color: transparent;
-    color: #189dd9;
+    color: #ffefd5;
     font-weight: 800;
     border-right: 2px solid;
 }
@@ -89,7 +89,7 @@
         height: 209px;
     }    
     .tab button.active {
-        border-bottom: 2px solid #189dd9!important;
+        border-bottom: 2px solid #ffefd5!important;
         border-right:none;
     }
     .tabcontent {

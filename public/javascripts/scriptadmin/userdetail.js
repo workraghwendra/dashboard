@@ -57,26 +57,26 @@ function fetchuserDetails() {
 
 
         if (status == false) {
-            document.getElementById("update").innerHTML = "<button style='color:#189dd9' class='btn btn-primary2 m-btn m-btn--user m-btn--icon' type='button'id='update' onclick='update()' >Update </button>";
+            document.getElementById("update").innerHTML = "<button style='color:#ffefd5' class='btn btn-primary2 m-btn m-btn--user m-btn--icon' type='button'id='update' onclick='update()' >Update </button>";
         } else {
 
             document.getElementById("update").innerHTML;
         }
 
         if(ban == false){
-            document.getElementById("banBtn").innerHTML = "<button style='color:#189dd9' class='btn btn-primary2 m-btn m-btn--user m-btn--icon'  type='button'id='banBtn' onclick='ban()' >Ban </button>";
+            document.getElementById("banBtn").innerHTML = "<button style='color:#ffefd5' class='btn btn-primary2 m-btn m-btn--user m-btn--icon'  type='button'id='banBtn' onclick='ban()' >Ban </button>";
         }else{
             document.getElementById("banBtn").innerHTML;
         }
 
         if(ban == true){
-            document.getElementById("unbanBtn").innerHTML = "<button style='color:#189dd9' class='btn btn-primary2 m-btn m-btn--user m-btn--icon'  type='button'id='unbanBtn' onclick='unban()' >Remove Ban </button>";
+            document.getElementById("unbanBtn").innerHTML = "<button style='color:#ffefd5' class='btn btn-primary2 m-btn m-btn--user m-btn--icon'  type='button'id='unbanBtn' onclick='unban()' >Remove Ban </button>";
         }else{
             document.getElementById("unbanBtn").innerHTML;
         }
 
         if (referral == 0) {
-            document.getElementById("add").innerHTML = "<button  style='color:#189dd9' class='btn btn-primary2 m-btn m-btn--user m-btn--icon' type='button' data-toggl='modal' onclick='AddReferral()' >Add</button>";;
+            document.getElementById("add").innerHTML = "<button  style='color:#ffefd5' class='btn btn-primary2 m-btn m-btn--user m-btn--icon' type='button' data-toggl='modal' onclick='AddReferral()' >Add</button>";;
         } else {
             document.getElementById("add").innerHTML;
         }
